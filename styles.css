@@ -1,0 +1,75 @@
+// General Layout Styles
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; // Stack header, main, footer vertically
+}
+
+// Centered Container Styles
+header,
+main,
+footer {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; // Center container horizontally
+  padding: 2rem;
+}
+
+// Header and Navigation Styles
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Space between logo and nav
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav i {
+  font-size: 1.3rem;
+}
+
+// Main Content Styles
+main,
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  gap: 4rem;
+}
+
+section {
+  gap: 1rem;
+}
+
+.intro-header p {
+  padding-top: 0.25rem;
+}
+
+.intro-description {
+  max-width: 500px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.link-arrow {
+  color: var(--color-link);
+  transform: rotate(-45deg); // Rotate arrow for link styling
+}
+
+.color-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
