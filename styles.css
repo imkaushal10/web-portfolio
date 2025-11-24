@@ -1,25 +1,23 @@
-// General Layout Styles
+// General layout styles
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column; // Stack header, main, footer vertically
 }
 
-// Centered Container Styles
 header,
 main,
 footer {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto; // Center container horizontally
+  margin: 0 auto;
   padding: 2rem;
 }
 
-// Header and Navigation Styles
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; // Space between logo and nav
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -33,7 +31,6 @@ nav i {
   font-size: 1.3rem;
 }
 
-// Main Content Styles
 main,
 section {
   display: flex;
@@ -65,11 +62,62 @@ section {
 
 .link-arrow {
   color: var(--color-link);
-  transform: rotate(-45deg); // Rotate arrow for link styling
+  transform: rotate(-45deg);
 }
 
 .color-div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+// Style for project card contents
+.project-card > div:first-of-type {
+  flex: 1;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.tech-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0;
+}
+
+.tech-list div {
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-card .img-div {
+    max-width: 30%;
+  }
 }
