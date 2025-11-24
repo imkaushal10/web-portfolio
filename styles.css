@@ -1,8 +1,7 @@
-// General layout styles
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; // Stack header, main, footer vertically
+  flex-direction: column;
 }
 
 header,
@@ -83,7 +82,6 @@ section {
   gap: 1rem;
 }
 
-// Style for project card contents
 .project-card > div:first-of-type {
   flex: 1;
 }

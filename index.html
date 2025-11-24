@@ -106,7 +106,7 @@
                     </div>
                     <div class="img-div">
                         <img class="big-img"
-                            src=""
+                            src="./public/p2.png"
                             alt="smoljames-thumbnail" />
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="img-div">
                         <img class="big-img"
-                            src=""
+                            src="./public/p2.png"
                             alt="smoljames-thumbnail" />
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                     </div>
                     <div class="img-div">
                         <img class="big-img"
-                            src=""
+                            src="./public/p2.png"
                             alt="smoljames-thumbnail" />
                     </div>
                 </div>
@@ -178,6 +178,47 @@
         <p>By <a target="_blank">KaushalBhattarai</a> ⭐️ the repo on <a target="_blank"
                 href="">GitHub</a></p>
     </footer>
+
+    <script>
+        // This is where we create the interactivity for our little color switching game
+
+        // 1. select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the functions 
+
+        function playGame() {
+            // this function enables the play of the game by showing the color selector input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
    
 </body>
 
