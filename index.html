@@ -7,6 +7,7 @@
     <title>Kaushal Web Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
@@ -35,6 +36,15 @@
                 </a>
                 <a target="_blank" href="https://github.com/imkaushal10">GitHub</a>
                 <a target="_blank" href="https://www.linkedin.com/in/kaushalbhattarai10/">LinkedIn</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
             </div>
 
         </section>
