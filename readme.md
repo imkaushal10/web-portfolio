@@ -12,17 +12,6 @@ A full-stack web application personnal portfolio showcasing projects, skills, an
 ## Technologies
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: Node.js/Express
-- Database: MongoDB
-
-## Getting Started
-
-```bash
-git clone <repository-url>
-cd portfolio-website
-npm install
-npm start
-```
 
 ## License
 
