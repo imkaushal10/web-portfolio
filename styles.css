@@ -1048,6 +1048,12 @@ section {
   border: 1px solid rgba(149, 128, 255, 0.3);
 }
 
+.tech-aws {
+  background: rgba(35, 47, 62, 0.1);
+  color: #954809ff;
+  border: 1px solid rgba(35, 47, 62, 0.3);
+}
+
 .tech-badge:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
